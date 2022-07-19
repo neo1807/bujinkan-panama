@@ -8,6 +8,7 @@
 .DS_Store
 .ddev
 .idea
+package-lock.json
 yarn.lock
 yarn-error.log
 types/generated/*.d.ts

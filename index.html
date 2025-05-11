@@ -31,7 +31,7 @@
 	<link rel="manifest" href="/dist/site.webmanifest">
 	<link href="/dist/output.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-	<script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -95,7 +95,7 @@
 						x-description="Mobile menu, show/hide based on menu open state."
 						class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
 						x-ref="panel" @click.away="open = false">
-						<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+						<div class="rounded-lg shadow-md bg-white  overflow-hidden">
 							<div class="px-5 pt-4 flex items-center justify-between">
 								<div>
 									<img class="h-8 w-auto" src="/dist/images/logo.svg" alt="bujinkan panama logo" width="179" height="39">
@@ -709,7 +709,7 @@
 							/dist/images/hatsumi/hatsumi_dhoxex_ar_16_9,c_fill,g_auto__c_scale,w_868.jpg 868w,
 							/dist/images/hatsumi/hatsumi_dhoxex_ar_16_9,c_fill,g_auto__c_scale,w_1100.jpg 1100w,
 							/dist/images/hatsumi/hatsumi_dhoxex_ar_16_9,c_fill,g_auto__c_scale,w_1280.jpg 1280w">
-							<img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+							<img class="w-full rounded-xl shadow-xl  lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
 								sizes="(max-width: 3200px) 40vw, 1280px" srcset="
 							/dist/images/hatsumi/hatsumi_dhoxex_c_scale,w_480.jpg 480w,
 							/dist/images/hatsumi/hatsumi_dhoxex_c_scale,w_703.jpg 703w,
@@ -800,7 +800,7 @@
 								sizes="(max-width: 1052px) 60vw, 631px" srcset="
 							/dist/images/pablo/pablo_kkwjm6_ar_16_9,c_fill,g_auto__c_scale,w_596.jpg 596w,
 							/dist/images/pablo/pablo_kkwjm6_ar_16_9,c_fill,g_auto__c_scale,w_631.jpg 631w">
-							<img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+							<img class="w-full rounded-xl shadow-xl  lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
 								sizes="(max-width: 1578px) 40vw, 631px" srcset="
 							/dist/images/pablo/pablo_kkwjm6_c_scale,w_480.jpg 480w,
 							/dist/images/pablo/pablo_kkwjm6_c_scale,w_631.jpg 631w" src="/dist/images/pablo/pablo_kkwjm6_c_scale,w_631.jpg"
@@ -1172,13 +1172,10 @@
 							<div class="ml-3 text-base text-rose-200">
 								<a href="https://wa.me/15551234567?text=Hola,%20estoy%20interesado%20en%20entrenar%20Bujinkan%20con%20ustedes"
 									target="_blank" rel="noopener">
-									+507 123 456
+									+507 6619 9850
 								</a>
 							</div>
 						</div>
-						<a class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-rose-700 hover:bg-neutral-50 sm:inline-block sm:w-auto"
-							href="mailto:email@example.com?subject=Informacion sobre entrenamiento de Bujinkan&body=Hola, estoy interesado en entrenar Bujinkan con uds.">Enviar
-							correo</a>
 					</div>
 				</div>
 			</div>
@@ -1229,8 +1226,8 @@
 					</svg>
 				</a>
 			</div>
-			<p class="mt-8 text-center text-base text-neutral-400">
-				© 2022 Bujinkan Panama. Todos los derechos reservados.
+			<p  x-data="{ year: new Date().getFullYear() }" class="mt-8 text-center text-base text-neutral-400">
+				© <span x-text="year"></span> Bujinkan Panama. Todos los derechos reservados.
 			</p>
 		</div>
 	</footer>

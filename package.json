@@ -1,14 +1,21 @@
 {
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css",
+    "serve": "eleventy --serve",
+    "serve:watch": "eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --watch",
+    "build:prod": "eleventy & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify"
+  },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
-    "tailwindcss": "^4.1.0"
+    "tailwindcss": "^4.2.1"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.6",
+    "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/postcss": "^4.1.6"
   }
 }

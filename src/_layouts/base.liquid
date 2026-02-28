@@ -1,9 +1,11 @@
 ---
 title: Bujinkan Panama — Sekiryu Dojo
+html_class:
+body_class:
 ---
 
 <!doctype html>
-<html lang="es" dir="ltr">
+<html lang="es" dir="ltr" class="{{ html_class }}">
     <head>
         <meta charset="UTF-8" />
         <meta
@@ -75,9 +77,9 @@ title: Bujinkan Panama — Sekiryu Dojo
         ></script>
     </head>
 
-    <body>
+    <body class="{{ body_class }}">
 
-        {{ content | safe }}
+        {{ content }}
 
     </body>
 </html>

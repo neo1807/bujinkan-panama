@@ -7,11 +7,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4.2.1"
   },
   "dependencies": {

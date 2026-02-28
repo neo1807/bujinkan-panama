@@ -4,10 +4,12 @@
 /lib
 /peers
 /example
+/_site
 .vscode
 .DS_Store
 .ddev
 .idea
+.env
 package-lock.json
 yarn.lock
 yarn-error.log

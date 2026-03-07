@@ -63,12 +63,12 @@
             sizes="16x16"
             href="/media/favicon-16x16.png"
         />
-        <link rel="manifest" href="/media/site.webmanifest" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         @if(Vite::running())
             {{ Vite::assets(['resources/assets/app.css']) }}
         @else
-            <link rel="stylesheet" href="{{ asset('media/app.css') }}">
+            <link rel="stylesheet" href="/media/app.css">
         @endif
 
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />

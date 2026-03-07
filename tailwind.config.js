@@ -1,15 +1,20 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html", "./404.html"],
+  content: [
+    "./_pages/**/*.blade.php",
+    "./resources/includes/**/*.blade.php",
+    "./resources/views/**/*.blade.php",
+    "./vendor/hyde/framework/resources/views/**/*.blade.php",
+  ],
+
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [
-  ]
-}
+
+  plugins: [require("@tailwindcss/typography")],
+};

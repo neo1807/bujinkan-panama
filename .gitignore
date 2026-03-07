@@ -1,16 +1,12 @@
+/vendor
 /node_modules
-/coverage
-/cli
-/lib
-/peers
-/example
-/_site
-.vscode
-.DS_Store
-.ddev
-.idea
+/builds
+/.idea
+/.vscode
+/.vagrant
+/.cache
+.phpunit.result.cache
+
 .env
-package-lock.json
-yarn.lock
-yarn-error.log
-types/generated/*.d.ts
+
+# /_site
